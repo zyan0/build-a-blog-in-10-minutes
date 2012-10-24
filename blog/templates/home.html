@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Blog</title>
+</head>
+<body>
+	<h1>Hello, world!</h1>
+	<hr />
+	{% for entry in entries %}
+	<h1>{{ entry.title }}</h1>
+	<p>{{ entry.time }}</p>
+	<p>{{ entry.content }}</p>
+	<hr />
+	{% endfor %}
+	<p>Proudly Powered by Xhacker</p>
+</body>
+</html>
