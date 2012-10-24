@@ -1,6 +1,6 @@
 # 10 分钟搭建你的个人 blog
 
-Python 大神闫铮教你用 Django！
+Python 大神柳开闫教你用 Django！
 
 ## 什么是 Python、Django？
 
@@ -11,7 +11,7 @@ Python 大神闫铮教你用 Django！
 ### Linux and OS X
 Python 已经默认安装，只需要先安装 pip（是什么？）：
 
-  curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+	curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
 然后安装 Django：
 
@@ -24,7 +24,15 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 	http://python.org/getit/
 
-TODO
+将 python.exe 加入环境变量 path。
+
+然后下载 Django 并解压：
+
+	https://www.djangoproject.com/download/
+
+最后在相应目录输入并运行：
+
+	python setup.py install
 
 ## [1 min] 基础设施
 
