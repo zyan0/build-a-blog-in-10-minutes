@@ -76,14 +76,18 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 * ...
 * 关于 id
 
+### 同步并建立相应数据库
+
+	python manage.py syncdb
+
 ## [1 min] URL - 如何访问到各个页面
 * 首页
 * 管理页面
-* 添加文章
-* 编辑文章
 * ...
 
-## [4 min] 添加、编辑
+## [2 min] 添加、编辑
+
+借用 Admin 实现。
 
 ### View
 View 部分是和 Controller 完全独立的。
