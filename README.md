@@ -80,6 +80,10 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 	python manage.py syncdb
 
+### 将相应 Model 注册入 Admin 中
+
+	admin.site.register(YourModel)
+
 ## [1 min] URL - 如何访问到各个页面
 * 首页
 * 管理页面
