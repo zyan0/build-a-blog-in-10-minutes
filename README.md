@@ -34,7 +34,7 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 	python setup.py install
 
-## [1 min] 基础设施
+## [2 min] 基础设施
 
 ### 创建 Project 和 App
 
@@ -53,11 +53,19 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 	    }
 	}
 
+### 启用 Admin 并将 Blog 加入已安装应用
+
+INSTALLED_APPS = (
+    ...
+    'django.contrib.admin',
+    'yourname.blog',
+)
+
 ### 运行服务器
 
 	python manage.py runserver
 
-## [1 min] Model - 如何存储你的文章
+## [2 min] Model - 如何存储你的文章
 
 ### MVC 简介
 
