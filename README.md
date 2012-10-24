@@ -98,6 +98,21 @@ View 部分是和 Controller 完全独立的。
 
 模版？变量？
 
+#### 输出
+	{{ variables }}
+#### 迭代
+	{% for ele in list %}
+		do something ...
+	{% endfor %}
+#### 模块
+	{% block name %}
+		<div>
+			....
+		</div>
+	{% endblock %}
+#### 继承
+	{% extends "base.html" %}
+
 ### Controller
 Controller 用来处理 Model 中的数据，传递给 View。
 
