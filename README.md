@@ -38,9 +38,24 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 ### 创建 Project 和 App
 
+	django-admin startproject yourname
+	cd yourname
+	django-admin startapp blog
+
 ### 设置数据库
 
+在 settings.py 文件中将 DATABASES 设置为如下内容：
+
+	DATABASES = {
+	    'default': {
+	        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+	        'NAME': 'blog/db/database.db',          # Or path to database file if using sqlite3.
+	    }
+	}
+
 ### 运行服务器
+
+	python manage.py runserver
 
 ## [1 min] Model - 如何存储你的文章
 
