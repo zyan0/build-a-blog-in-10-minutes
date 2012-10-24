@@ -55,11 +55,11 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 ### 启用 Admin 并将 Blog 加入已安装应用
 
-INSTALLED_APPS = (
-    ...
-    'django.contrib.admin',
-    'yourname.blog',
-)
+	INSTALLED_APPS = (
+	    ...
+	    'django.contrib.admin',
+	    'yourname.blog',
+	)
 
 ### 运行服务器
 
