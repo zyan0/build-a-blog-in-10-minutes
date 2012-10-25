@@ -4,7 +4,7 @@ Python 大神柳开闫教你用 Django！
 
 ## 什么是 Python、Django？
 
-## [1 min] 准备环境
+## 1. [1 min] 准备环境
 
 安装 Python、Django。
 
@@ -34,7 +34,7 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 	python setup.py install
 
-## [2 min] 基础设施
+## 2. [2 min] 基础设施
 
 ### 创建 Project 和 App
 
@@ -65,7 +65,7 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 	python manage.py runserver
 
-## [2 min] Model - 如何存储你的文章
+## 3. [3 min] Model - 如何储存你的文章
 
 ### MVC 简介
 
@@ -74,7 +74,6 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 * 时间
 * 内容
 * ...
-* 关于 id
 
 ### 同步并建立相应数据库
 
@@ -84,43 +83,25 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 	admin.site.register(YourModel)
 
-## [1 min] URL - 如何访问到各个页面
-* 首页
-* 管理页面
-* ...
 
-## [2 min] 添加、编辑
+## 4. [2 min] Controller - 数据库和页面间的桥梁
+Controller 用来处理 Model 中的数据，传递给 View。
 
-借用 Admin 实现。
+### URL - 路径到函数的绑定
 
-### View
-View 部分是和 Controller 完全独立的。
+### 要传递给 View 的数据？
 
-模版？变量？
+## 5. [2 min] View - 页面
+View 是网站的前端部分，从 Controller 获得数据，由很多模版组成。
 
-#### 输出
+模版就是常规的 HTML 文件。
+
+### 输出
 	{{ variables }}
-#### 迭代
+### 迭代
 	{% for ele in list %}
 		do something ...
 	{% endfor %}
-#### 模块
-	{% block name %}
-		<div>
-			....
-		</div>
-	{% endblock %}
-#### 继承
-	{% extends "base.html" %}
-
-### Controller
-Controller 用来处理 Model 中的数据，传递给 View。
-
-* 添加和修改文章
-* 列出文章
-
-## [2 min] 浏览文章
-Simple enough now!
 
 ## Done! What's More?
 * Category, tag?
