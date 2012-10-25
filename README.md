@@ -4,6 +4,23 @@ Python 大神柳开闫教你用 Django！
 
 ## 什么是 Python、Django？
 
+### Why Python?
+> Beautiful is better than ugly.
+
+> Explicit is better than implicit.
+
+> Simple is better than complex.
+
+	import this
+
+Simple, funny, powerful.
+
+### Why Django?
+
+void 大神：
+
+> Django 太神奇了！
+
 ## 1. [1 min] 准备环境
 
 安装 Python、Django。
@@ -48,8 +65,8 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 
 	DATABASES = {
 	    'default': {
-	        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-	        'NAME': 'blog/db/database.db',          # Or path to database file if using sqlite3.
+	        'ENGINE': 'django.db.backends.sqlite3',
+	        'NAME': 'blog/db/database.db',
 	    }
 	}
 
@@ -88,6 +105,12 @@ Python 已经默认安装，只需要先安装 pip（是什么？）：
 Controller 用来处理 Model 中的数据，传递给 View。
 
 ### URL - 路径到函数的绑定
+Why need this?
+
+例：1989年的文章列表
+
+* Good URL: ``http://yourblog/1989/``
+* Bad URL: ``http://youblog/article_list.php?year=1989``
 
 ### 要传递给 View 的数据？
 
@@ -100,10 +123,12 @@ View 是网站的前端部分，从 Controller 获得数据，由很多模版组
 	{{ variables }}
 ### 迭代
 	{% for ele in list %}
-		do something ...
+		do something w/ ele ...
 	{% endfor %}
 
-## Done! What's More?
+## http://localhost:8000
+
+## Done! What’s More?
 * Category, tag?
 * Comment?
 * Beautiful template?
