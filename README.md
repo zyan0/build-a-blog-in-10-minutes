@@ -1,4 +1,4 @@
-# 10 分钟搭建你的个人 Blog
+# 10 分钟、20 行代码搭建你的个人 Blog
 
 Python 大神柳开闫教你用 Django！
 
@@ -17,7 +17,7 @@ Simple, funny, powerful.
 
 void 大神：
 
-> Django 太神奇了！
+> 用 Django 好几年了，月月都舒服。
 
 ## 1. [1 min] 准备环境
 
@@ -107,8 +107,8 @@ Why need this?
 
 例：1989年的文章列表
 
-* Good URL: ``http://yourblog/1989/``
-* Bad URL: ``http://youblog/article_list.php?year=1989``
+* Good URL: ``http://yzheng.me/1989/``
+* Bad URL: ``http://yzheng.me/article_list.php?year=1989``
 
 ### 要传递给 View 的数据？
 
@@ -132,3 +132,8 @@ View 是网站的前端部分，从 Controller 获得数据，由很多模版组
 * Beautiful template?
 * ...
 * With group, have a try!
+
+## Further Read
+* Django 文档: [https://docs.djangoproject.com/](https://docs.djangoproject.com/)
+* Django Book: [http://djangobook.py3k.cn/2.0/](http://djangobook.py3k.cn/2.0/)
+* The Python Tutorial: [http://docs.python.org/tutorial/](http://docs.python.org/tutorial/)
