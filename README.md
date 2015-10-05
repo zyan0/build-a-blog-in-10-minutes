@@ -133,7 +133,7 @@ View 是网站的前端部分，从 Controller 获得数据，由很多模版组
 * ...
 * With group, have a try!
 
-## Further Read
+## Further Readings
 * Django 文档: [https://docs.djangoproject.com/](https://docs.djangoproject.com/)
 * Django Book: [http://djangobook.py3k.cn/2.0/](http://djangobook.py3k.cn/2.0/)
 * The Python Tutorial: [http://docs.python.org/tutorial/](http://docs.python.org/tutorial/)
